@@ -59,4 +59,8 @@ public class LoginStepDefintion {
         Assert.assertEquals(expectedLoggedInUsername, actualLoggedInUsername);
     }
 
+    @And("^Terminate the browser instance$")
+    public void terminate_browser_instance(){
+        webDriver.quit();
+    }
 }
